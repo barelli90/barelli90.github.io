@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Azom</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        <div class="fix">
+                <header class="header">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-lg-8 col-md-7 col-sm-7 hidden-xs">
+                             <ul class="nav nav-tabs top-menu">
+                                 <li ><a href="index.html">Ocado home</a></li>
+                                 <li class="active"><a href="goods.html">RECIPES</a></li>
+                                 <li><a href="#menu2">Summer food</a></li>
+                                 <li><a href="#menu3">Share</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs">
+                            <div class="auth-buttons header-tile">
+                                <div id="login" class="pii">
+                                    <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                </div>
+                                <div id="register">
+                                    <a href="#" class="button button-register" id="quickReg">Register</a>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </header>   
+             <div class="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mobile-bg">
+                        
+                            <div id="brandLogo">
+                                <a title="Home" name="home" href="#">
+                                    <img class="hidden-lg hidden-md hidden-sm visible-xs" src="images/azom-mob.svg" alt="Ocado - Home">
+                                    <img  class="hidden-xs" src="images/logo.svg" alt="Ocado - Home">
+                                </a>
+                            </div>
+                            <form action="" class="suggestionsForm">
+                                <fieldset>
+                                    <input id="findText" class="navSearchTxt searchModeActive" name="entry" type="text" maxlength="50" autocomplete="off" autocapitalize="off" autocorrect="off" title="Find a product" placeholder="Find a product" value="">
+                                    <input type="submit" id="findButton" class="navSearchBtn" value="" title="Search">
+                                </fieldset>
+                            </form>
+                            <!-- Split button -->
+                            <div class="btn-group lang">
+                                <button type="button" class="btn btn btn-default">RU</button>
+                                <button type="button" class="btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">AZ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                            <div id="basketSummary" class="basketSummary">
+                                <a href="" class="notification"> <img src="images/green-van.svg" alt="" style="    width: 32px;"></a>
+                                <a href="" class="notification" > <img src="images/libra.svg" alt="" class="sub-nav-item"></a>
+                                <a href="" class="notification"><img src="images/heart.svg" alt=""  class="sub-nav-item"><span class="basket-number" >99+</span></a>
+                                <a href="" class="notification"> <img src="images/basket.svg" alt=""  class="sub-nav-item"><span class="basket-number" >0</span></a>
+                            </div>
+                            <div class="mobile-menu-xs hidden-lg hidden-md hidden-sm ">
+                                    <nav class=" navbar-default">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                            <div id="navbar" class="navbar-collapse collapse mobile-collapse" aria-expanded="false" style="height: 1px;">
+                                                <div class="auth-buttons header-tile">
+                                                    <div id="login" class="pii">
+                                                        <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                                    </div>
+                                                    <div id="register">
+                                                        <a href="#" class="button button-register" id="quickReg">Register</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav navbar-nav">
+                                                <li><a href="catalog.html">Top pics</a></li>
+                                                <li><a href="catalog.html">Offers</a></li>
+                                                <li><a href="catalog.html">Favorites</a></li>
+                                                <li><a href="catalog.html">Default</a></li>
+                                                <li><a href="catalog.html">Static top</a></li>
+                                                <li><a href="catalog.html">Fixed top</a></li>
+                                            </ul>
+                                        </div><!--/.nav-collapse -->
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                 <div class="navbar navbar-default navbar-fixed-top main-menu hidden-xs" role="navigation">
+                   <div class="container">
+                       <div class="row">
+                       <div class="navbar-header">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                           </button>
+                       </div>
+                       <div class="collapse navbar-collapse ">
+                           <ul class="nav navbar-nav">
+                                <!-- MENU EV UCUN BAWLAYIR  -->
+                                 <li>
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ev Üçün <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hamam Və Tualet</a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Hamam Və Tualet Təmizləyiciləri</a></li>
+                                                <li><a href="#">Boru Təmizləyiciləri </a></li>
+                                                <li><a href="#">Təmizləyici Fırçalar</a></li>
+                                                <li><a href="#">Tualet Kağızı</a></li>
+                                                <li><a href="#">Kağızlar Dəsmallar</a></li>
+                                                <li><a href="#"> Təmizləyici Nəm Salfetlər</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Təmizləyici Vasitələr</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Döşəmə Təmizləyiciləri</a></li>
+                                                <li><a href="#">Taxta Və Digər Səth Təmizləyiciləri</a></li>
+                                                <li><a href="#">Soba Və Səth Təmizləyiciləri</a></li>
+                                                <li><a href="#"> Güzgü Və Şüşə Təmizləticiləri</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Yuyucu Vasitələr </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Yuyucu Toz</a></li>
+                                                <li><a href="#">Maye Və Gel/ Kondisioner</a></li>
+                                                <li><a href="#">Ləkə Təmizləyici Və Ağardıcılar</a></li>
+                                                <li><a href="#">Maye Və Tabletlər</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digər Təmizləyici Vasitələr </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Əlcəklər</a></li>
+                                                <li><a href="#"> Təravətləndiricilər</a></li>
+                                                <li><a href="#"> Həşərat Və Böcəklərə Qarşı Vasitələr</a></li>
+                                                <li><a href="#">Ayaqqabı Qulluq Vasitələri</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salfetlər</a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Salfetlər Və Əskilər</a></li>
+                                                <li><a href="#">Əl Dəsmalı </a></li>
+                                                <li><a href="#">Nəm Salfetlər</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Zibil Torbaları Və Plyonkalar</a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Alüminium Folqa</a></li>
+                                                <li><a href="#"> Perqament Kağız</a></li>
+                                                <li><a href="#">Plastik Plyonka</a></li>
+                                                <li><a href="#">Dondurulma Üçün Paket</a></li>
+                                                    <li><a href="#">Zibil Torbaları</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plastik Qablar Və Diş Çöpləri</a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Stəkan Və Boşqablar</a></li>
+                                                <li><a href="#">Diş Çöpləri</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Avtomobil Üçün </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Avtomobil Üçün Qulluq Vasitələri</a></li>
+                                                <li><a href="#">Süngər Və Salfetlər </a></li>
+                                                <li><a href="#">Təravət Və Ət </a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            <!-- MENU EV UCUN QURTARIR  -->
+
+
+                            <!-- MENU SHEXSI GIGIENA BAWLAYIR  -->
+                               <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Şəxsi Gigiyena <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kişi Üçün </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Təraş Vasitələri</a></li>
+                                                <li><a href="#">Təraş Sonrası Vasitələr</a></li>
+                                                <li><a href="#">Dəriyə Qulluq</a></li>
+                                                <li><a href="#"> Saça Qulluq</a></li>
+                                                <li><a href="#">Dezodorantlar</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bədənə Qulluq </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Sabunlar</a></li>
+                                                <li><a href="#">Gellər</a></li>
+                                                <li><a href="#">Vanna Üçün Köpük</a></li>
+                                                <li><a href="#">Kremlər Və Losyonlar</a></li>
+                                                <li><a href="#">Bədən Üçün Süngərlər</a></li>
+                                                <li><a href="#">Bezlər Və Tamponlar</a></li>
+                                                <li><a href="#">Tibbi Bezlər</a></li>
+                                                <li><a href="#">Təraş Vasitələri</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dəriyə Qulluq </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Makiyaj Təmizləyiciləri</a></li>
+                                                <li><a href="#"> Kremlər Və Maskalar</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saça Qulluq </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Şampunlar</a></li>
+                                                <li><a href="#">Balzam Və Maskalar/ Yağlar</a></li>
+                                                <li><a href="#">Spreylər Və Zərdablar/ Lak</a></li>
+                                                <li><a href="#">Muss Və Gellər/ Saç Boyaları</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dişlərə Qulluq </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Diş Pastaları, </a></li>
+                                                <li><a href="#">Diş Fırçaları</a></li>
+                                                <li><a href="#">Ağız Yaxalayıcılar)</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gigiyenik Pambıq Məhsulları  </a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Qulaq Çöpləri, </a></li>
+                                                <li><a href="#">Pambıq Disklər</a></li>
+                                                <li><a href="#">Pambıqlar</a></li>                                                    
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dezodorantlar</a>
+                                            <ul class="dropdown-menu dropdown-menu1">
+                                                <li><a href="#">Sprey Dezodorant</a></li>
+                                                <li><a href="#">Diyircəkli Dezodorant</a></li>
+                                                <li><a href="#"> Gel Dezodorant</a></li>
+                                            </ul>
+                                            <ul class="dropdown-menu dropdown-menu2">
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+            <!-- MENU SHEXSI GIGIYENA BASHLAYIR -->
+
+            <!-- MENU USHAQLAR UCUN BASHLAYIR -->
+                            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Uşaqlar Üçün <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gigiyena  </a>
+                                        <ul class="dropdown-menu dropdown-menu1">
+                                            <li><a href="#">Bədənə Qulluq</a></li>
+                                            <li><a href="#">Saça Qulluq</a></li>
+                                            <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                        </ul>
+                                        <ul class="dropdown-menu dropdown-menu2">
+                                            <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bezlər  </a>
+                                        <ul class="dropdown-menu dropdown-menu1">
+                                            <li><a href="#">Leylək</a></li>
+                                            <li><a href="#">Pampers</a></li>
+                                            <li><a href="#">Huggies</a></li>
+                                            <li><a href="#">Predo</a></li>
+                                            <li><a href="#">Canbebe</a></li>
+                                            <li><a href="#">Gizmo</a></li>
+                                            <li><a href="#"> Pafilya</a></li>
+                                            <li><a href="#">Joyjo</a></li>
+                                            <li><a href="#">Sleepy</a></li>
+                                            <li><a href="#">Giggles</a></li>
+                                            <li><a href="#">Molfix</a></li>
+                                            <li><a href="#"> Libero</a></li>
+                                            <li><a href="#">  Bello</a></li>
+                                        </ul>
+                                        <ul class="dropdown-menu dropdown-menu2">
+                                            <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salfetlər  </a>
+                                        <ul class="dropdown-menu dropdown-menu1">
+                                            <li><a href="#">Bədənə Qulluq</a></li>
+                                            <li><a href="#">Saça Qulluq</a></li>
+                                            <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                        </ul>
+                                        <ul class="dropdown-menu dropdown-menu2">
+                                            <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Qida <b class="caret"></b></a></li>
+                            <li><a href="offers.html">New</a></li>
+                            <li><a href=contact.html>Favorites</a></li>
+                           </ul>
+                       </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="notfound">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="notfound-img">
+                            <img src="images/box.svg" alt="">
+                    </div>
+                <div>
+                    <p class="notfound-p">
+                      sebetde mehsul yoxdur
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="socialMedia">
+                    <ul>
+                        <li>
+                            <a href="#" class="facebook" target="_blank">
+                                Ocado Facebook page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tabs-2" class="twitter" target="_blank">
+                                Ocado Twitter page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="gplus" target="_blank" rel="publisher">
+                                Google Plus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pinterest" target="_blank">
+                                Ocado Pinterest page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram" target="_blank">
+                                Ocado Instagram page
+                            </a>
+                        </li>                            
+                        <li>
+                            <a href="#" class="youtube" target="_blank">
+                                Ocado Youtube channel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog" target="_blank">
+                                Ocado blog
+                            </a>
+                        </li>
+                    </ul>
+                    <!--  <p>
+                        Download our Apps
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#" class="ios" target="_blank">
+                                Download our app for iPhone and iPad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="android" target="_blank">
+                                Download our app for Android
+                            </a>
+                        </li>
+                    </ul> -->
+                    <img src="images/footer.jpg" alt="" class="footer-image hidden-xs">
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col contact">
+                        <h4><a href="contact.html">Contact us</a></h4>
+                        <p><strong>Call Us</strong>  5:30am - midnight, 7 days a week, on 0345 656 1234</p>
+                        <p><strong>Email us</strong> at <a href="mailto:azom@azom.az">azom@azom.az</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a href="aboutus.html">About Us</a>  
+                     </div>
+                </div>
+    
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                    <div>
+                        © 2018 All rights reserved. Azom Retail Limited
+                    </div>
+               </div>
+            </div>
+        </div>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.raty.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

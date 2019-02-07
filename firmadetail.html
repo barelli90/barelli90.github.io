@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Azom</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        <div class="fix">
+                <header class="header">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-lg-8 col-md-7 col-sm-7 hidden-xs">
+                             <ul class="nav nav-tabs top-menu">
+                                 <li ><a href="index.html">Ocado home</a></li>
+                                 <li class="active"><a href="goods.html">RECIPES</a></li>
+                                 <li><a href="#menu2">Summer food</a></li>
+                                 <li><a href="#menu3">Share</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs">
+                            <div class="auth-buttons header-tile">
+                                <div id="login" class="pii">
+                                    <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                </div>
+                                <div id="register">
+                                    <a href="#" class="button button-register" id="quickReg">Register</a>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </header>   
+             <div class="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mobile-bg">
+                        
+                            <div id="brandLogo">
+                                <a title="Home" name="home" href="#">
+                                    <img class="hidden-lg hidden-md hidden-sm visible-xs" src="images/azom-mob.svg" alt="Ocado - Home">
+                                    <img  class="hidden-xs" src="images/logo.svg" alt="Ocado - Home">
+                                </a>
+                            </div>
+                            <form action="" class="suggestionsForm">
+                                <fieldset>
+                                    <input id="findText" class="navSearchTxt searchModeActive" name="entry" type="text" maxlength="50" autocomplete="off" autocapitalize="off" autocorrect="off" title="Find a product" placeholder="Find a product" value="">
+                                    <input type="submit" id="findButton" class="navSearchBtn" value="" title="Search">
+                                </fieldset>
+                            </form>
+                            <!-- Split button -->
+                            <div class="btn-group lang">
+                                <button type="button" class="btn btn btn-default">RU</button>
+                                <button type="button" class="btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">AZ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                            <div id="basketSummary" class="basketSummary">
+                                <a href="" class="notification"> <img src="images/green-van.svg" alt="" style="    width: 32px;"></a>
+                                <a href="" class="notification" > <img src="images/libra.svg" alt="" class="sub-nav-item"></a>
+                                <a href="" class="notification"><img src="images/heart.svg" alt=""  class="sub-nav-item"><span class="basket-number" >99+</span></a>
+                                <a href="" class="notification"> <img src="images/basket.svg" alt=""  class="sub-nav-item"><span class="basket-number" >0</span></a>
+                            </div>
+                            <div class="mobile-menu-xs hidden-lg hidden-md hidden-sm ">
+                                    <nav class=" navbar-default">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                            <div id="navbar" class="navbar-collapse collapse mobile-collapse" aria-expanded="false" style="height: 1px;">
+                                                <div class="auth-buttons header-tile">
+                                                    <div id="login" class="pii">
+                                                        <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                                    </div>
+                                                    <div id="register">
+                                                        <a href="#" class="button button-register" id="quickReg">Register</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav navbar-nav">
+                                                <li><a href="catalog.html">Top pics</a></li>
+                                                <li><a href="catalog.html">Offers</a></li>
+                                                <li><a href="catalog.html">Favorites</a></li>
+                                                <li><a href="catalog.html">Default</a></li>
+                                                <li><a href="catalog.html">Static top</a></li>
+                                                <li><a href="catalog.html">Fixed top</a></li>
+                                            </ul>
+                                        </div><!--/.nav-collapse -->
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="navbar navbar-default navbar-fixed-top main-menu  hidden-xs" role="navigation">
+                        <div class="container">
+                            <div class="row">
+                          
+                            <div class="collapse navbar-collapse ">
+                             <ul class="mainMenu">
+                                 <li class="menu">
+                                   Product<b class="caret"></b>
+                                         <ul  class="katalog podmenu">
+                                             <li class="podmenu-li">
+                                                    ev ucun 
+                                                 <ul  class="katalog podmenu2">
+                                                     <li class="podmenu-li2">
+                                                             <a href="">Hamam Və Tualet Təmizləyiciləri</a>  
+                                                         <ul  class="katalog  podmenu3" >
+                                                             <li><a href="#">Hamam Və Tualet Təmizləyiciləri</a></li>
+                                                             <li><a href="#">Boru Təmizləyiciləri </a></li>
+                                                             <li><a href="#">Təmizləyici Fırçalar</a></li>
+                                                             <li><a href="#">Tualet Kağızı</a></li>
+                                                             <li><a href="#">Kağızlar Dəsmallar</a></li>
+                                                             <li><a href="#">Hamam Və Tualet</a></li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         <a href="">Təmizləyici Vasitələ</a> 
+                                                         <ul  class="katalog podmenu3">
+                                                             <li><a href="#">Döşəmə Təmizləyiciləri</a></li>
+                                                             <li><a href="#">Taxta Və Digər Səth Təmizləyiciləri</a></li>
+                                                             <li><a href="#">Soba Və Səth Təmizləyiciləri</a></li>
+                                                             <li><a href="#"> Güzgü Və Şüşə Təmizləticiləri</a></li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         <a href="">Digər Təmizləyici Vasitələr</a> 
+                                                         <ul  class="katalog podmenu3">
+                                                             <li><a href="#">Əlcəklər</a></li>
+                                                             <li><a href="#"> Təravətləndiricilər</a></li>
+                                                             <li><a href="#"> Həşərat Və Böcəklərə Qarşı Vasitələr</a></li>
+                                                             <li><a href="#">Ayaqqabı Qulluq Vasitələri</a></li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         <a href="">Salfetlər</a> 
+                                                         <ul  class="katalog podmenu3">
+                                                             <li><a href="#">Salfetlər Və Əskilər</a></li>
+                                                             <li><a href="#">Əl Dəsmalı </a></li>
+                                                             <li><a href="#">Nəm Salfetlər</a></li>
+                                                         </ul>
+                                                     </li>
+                                                 </ul>
+                                                 <ul class="katalog podmenu-foto">
+                                                     <li>
+                                                         <a href=""><img src="images/wed.jpg" alt="" class="firm-photo" ></a>
+                                                     </li>
+                                                 </ul>
+                                             </li>
+                                             <li class="podmenu-li">
+                                                 Şəxsi Gigiyena 
+                                                 <ul  class="katalog podmenu2">
+                                                     <li class="podmenu-li2">
+                                                         vtoroy
+                                                         <ul  class="katalog  podmenu3" >
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         second
+                                                         <ul  class="katalog podmenu3">
+                     
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                 </ul>
+                                                 <ul class="katalog podmenu-foto">
+                                                     <li><a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                     <li><a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                 </ul>
+                                             </li>
+                                             <li class="podmenu-li">
+                                                 Uşaqlar Üçün
+                                                 <ul  class="katalog podmenu2">
+                                                     <li class="podmenu-li2">
+                                                         vtoroy
+                                                         <ul  class="katalog  podmenu3" >
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         second
+                                                         <ul  class="katalog podmenu3">
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                 </ul>
+                                                 <ul class="katalog podmenu-foto">
+                                                     <li><a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                     <li><a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                 </ul>
+                                             </li>
+                                             <li class="podmenu-li">
+                                                 Qida 
+                                                 <ul  class="katalog podmenu2">
+                                                     <li class="podmenu-li2">
+                                                         vtoroy
+                                                         <ul  class="katalog  podmenu3" >
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                     <li class="podmenu-li2">
+                                                         second
+                                                         <ul  class="katalog podmenu3">
+                                                             <li>
+                                                                 product
+                                                             </li>
+                                                         </ul>
+                                                     </li>
+                                                 </ul>
+                                                 <ul class="katalog podmenu-foto">
+                                                     <li><a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                     <li>  <a href=""><img src="images/wed.jpg" alt=""></a></li>
+                                                 </ul>
+                                             </li>
+                                         </ul>
+                                        
+                                 </li>
+                                 <li class="menu">
+                                     contact us
+                                 </li>
+                             </ul>
+                            </div><!--/.nav-collapse -->
+                         </div>
+                     </div>
+                 </div>
+        </div>
+<div id="sis_shop-wrap">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="sidebar-element filter-list js-filters">
+                                <div class="sidebar-item filter-actions">
+                                    <span class="filter-by show-for-xlarge">
+                                        Filter by
+                                    </span>
+                                    <div class="chevron-collapse-icon"></div>
+                                    <!-- <a href="#" class="clear-link sidebar-link disabled">
+                                        Clear all
+                                    </a> -->
+                                </div>
+                                <div class="filter-option">
+                                    <button class="accordion active-ac" >Brands</button>
+                                    <div class="panel">
+                                        <label class="check-label">
+                                            <input type="checkbox" value="x" aria-label="...">
+                                            <span>Fry's</span>    
+                                        </label>
+                                        <label class="check-label">
+                                            <input type="checkbox"  value="xx" aria-label="...">
+                                            <span>Fry's</span>    
+                                        </label>
+                                        <label class="check-label">
+                                            <input type="checkbox"  value="xxx" aria-label="...">
+                                            <span>Fry's</span>    
+                                        </label>
+                                    </div>
+                                    <button class="accordion active-ac">Options</button>
+                                    <div class="panel">
+                                        <label>
+                                            <input type="checkbox"  value="option1" aria-label="...">
+                                            <span>Fry's</span>    
+                                        </label>
+                                    </div>
+                                    <button class="accordion active-ac">Dietary</button>
+                                    <div class="panel">
+                                        <label>
+                                            <input type="checkbox"  value="option1" aria-label="...">
+                                            <span>Fry's</span>    
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+            <!-- RECOMMENDED YOU -->
+            <div class="sidebar-element you-might-like recommended">
+                    <div class="sidebar-header">Recommended to you</div>
+                    <div class="fop-content">
+                        <div class="fopView">
+                            <div class="fop-img-wrapper">
+                                <img alt="Schweppes Lemonade" aria-hidden="true" class="fop-img" src="images/si3.jpg">
+                            </div>
+                        </div>
+                        <div class="fop-description">
+                            <a href="detail.html" class="detail-page-link">
+                                <p class="fop-title">
+                                    Schweppes Lemonade
+                                    <span class="fop-catch-weight-inline"> 2L</span>
+                                </p>
+                                <div class="price-group-wrapper">
+                                    <h5 class="fop-price fop-lpp">
+                                        £3.20
+                                    </h5>        
+                                </div>
+                            </a>
+                            <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                <span class="add-to-trolley">Add to trolley</span>
+                            </button>    
+                        </div>
+                    </div>
+                    <div class="fop-content">
+                        <div class="fopView">
+                            <div class="fop-img-wrapper">
+                                <img alt="Schweppes Lemonade" aria-hidden="true" class="fop-img" src="images/s5.jpg">
+                            </div>
+                        </div>
+                        <div class="fop-description">
+                            <a href="detail.html" class="detail-page-link">
+                                <p class="fop-title">
+                                    Schweppes Lemonade
+                                    <span class="fop-catch-weight-inline"> 2L</span>
+                                </p>
+                                <div class="price-group-wrapper">
+                                    <h5 class="fop-price fop-lpp">
+                                        £3.20
+                                    </h5>        
+                                </div>
+                            </a>
+                            <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                <span class="add-to-trolley">Add to trolley</span>
+                            </button>    
+                        </div>
+                    </div>
+                </div>  
+
+
+                    </div>
+                
+                
+                    <div class="col-lg-10 col-md-9 col-sm-9">
+                        <div class="row">
+                                <div class="sis_nav" id="mainsis_nav">
+
+
+                                        <label for="sis_toggle" class="sis_toggle" data-close="Close Menu" onclick="onclick"></label>
+                                        <ul class="sis_menu">
+                                              <li id="sis_home" class="sis_on"> <a href="">Home</a> </li>
+                                              <li id="sis_traditionalAle"><a href="">Traditional Ale</a>
+                                               
+                                              <li id="sis_craftBeer" > <a href="">Craft Beer</a>
+                                                
+                                              </li>
+                                              <li id="sis_gifts"> <a href="">Gifts</a></li>
+                                              <li id="sis_offers"> <a href="">Offers</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sis_shop-branding">
+                                        <div class="sis_branding">
+                                            <div class="logo-standard">
+                                                <img  src="images/2622156.png" alt="Lock Up alt text">
+                                            </div>
+                                            <img src="images/2587187.png" alt="">
+                                            
+                                        </div>
+                                    </div>
+
+
+                        </div>
+                           
+
+
+                            <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                        <div class="fop-content">
+                                                <div class="redline"></div>
+                                                <div class="stickers">
+                                                    <span class="fop-mark-new fop-image-corner">new</span>
+                                                </div>
+                                                <div class="fop-quickMenu__buttonContainer">
+                                                    <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <rect class="hover-trigger" style="width:20px;height:20px;stroke-width:0;fill:transparent"></rect>
+                                                            <g class="fav-anim">
+                                                                <g>
+                                                                    <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                    <g class="line-out">
+                                                                       
+                                                                    </g>
+                                                                    <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                               
+                                               
+                                            <div class="fop-img-wrapper">
+                                                <img src="images/x.jpg"  class="fop-img" alt=""> 
+                                                <div class="add-compare">
+                                                    <img src="images/libra.svg" alt="" class="sub-nav-item">
+                                                </div>
+                                            </div>
+                                       
+                                            <div class="fop-description">
+                                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                        <span class="fop-catch-weight-inline"> 75ml</span>
+                                                </h4>
+                                                <span class="fop-catch-weight"> 75ml</span>
+                                            </div>
+                                        
+                                            <div class="review-wrapper">
+                                                <span class="fop-rating">
+                                                        <div class="stars_small" height="20">
+                                                                <input type="hidden" name="score" value="3.5" readonly="readonly">
+                                                        </div>
+                                                    <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;"></span>
+                                                </span>
+                                            </div>
+                                            <div class="price-group-wrapper">
+                                                <span class="fop-price">
+                                                    ₼2.19
+                                                </span>
+                                            </div>
+                                                    
+                                          
+                                             <div class="button-section ">
+                                                <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                                    <span class="add-to-trolley">Add to trolley</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                        <div class="fop-content ">
+                                                <div class="redline"></div>
+                                                <div class="stickers">
+                                                    <span class="fop-mark-new fop-image-corner">new</span>
+                                                    <span class="fop-mark-stock fop-image-corner">акция</span>
+                                                </div>
+                                                <div class="fop-quickMenu__buttonContainer">
+                                                        <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                                    <rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect>
+                                                                    <g class="fav-anim">
+                                                                        <g>
+                                                                            <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                            <g class="line-out">
+                                                                               
+                                                                            </g>
+                                                                            <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>                                        </div>
+                                            <div class="fop-img-wrapper">
+                                                <img src="images/ris.jpg" class="fop-img" alt=""> 
+                                            </div>
+                                            <div class="fop-description">
+                                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                        <span class="fop-catch-weight-inline"> 75ml</span>
+                                                </h4>
+                                                <span class="fop-catch-weight"> 75ml</span>
+                                            </div>
+                                            <div class="review-wrapper">
+                                                    <span class="fop-rating">
+                                                            <div class="stars_small" height="20">
+                                                                    <input type="hidden" name="score" value="5" readonly="readonly">
+                                                            </div>
+                                                           
+                                                    </span>
+                                                </div>
+                                            <div class="price-group-wrapper">
+                                                    <span class="fop-price price-offer">
+                                                        ₼2.19
+                                                    </span>
+                                                    <span class="fop-old-price">₼9.99</span>
+                                                </div>
+                                               
+                                               
+                                                <div class="button-section ">
+                                                <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                                        <span class="add-to-trolley">Add to trolley</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                            <div class="fop-content">
+                                                <div class="redline"></div>
+                                                <a href="" class="detail-page-link"></a>
+                                                <div class="stickers">
+                                                        <span class="fop-mark-stock fop-image-corner">акция</span>
+                                                </div>
+                                                <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                    <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect>
+                                                            <g class="fav-anim">
+                                                                <g>
+                                                                    <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                    <g class="line-out">
+                                                                        
+                                                                    </g>
+                                                                    <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </button>                                              
+                                                </div>
+                                                <div class="fop-img-wrapper">
+                                                    <img src="images/kampot.jpg"  class="fop-img" alt=""> 
+                                                </div>
+                                                <a href="detail.html" class="detail-page-link">
+                                                <div class="fop-description">
+                                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                                    </h4>
+                                                    <span class="fop-catch-weight"> 75ml</span>
+                                                </div>
+                                                <div class="review-wrapper">
+                                                    <span class="fop-rating">
+                                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+                    
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="price-group-wrapper">
+                                                        <span class="fop-price price-offer">
+                                                            ₼29.19
+                                                        </span>
+                                                        <span class="fop-old-price">₼99.99</span>
+                                                </div>
+                                                     </a>
+                                                
+                                                 <div class="button-section ">
+                                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                                        <span class="add-to-trolley">Add to trolley</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                            <div class="fop-content">
+                                                    <div class="redline"></div>
+                                                    <a href="" class="detail-page-link"></a>
+                                                    <div class="stickers">
+                                                            <span class="fop-mark-offer fop-image-corner">компания</span>
+                                                    </div>
+                                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                            <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                                        <rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect>
+                                                                        <g class="fav-anim">
+                                                                            <g>
+                                                                                <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                                <g class="line-out">
+                                                                                   
+                                                                                </g>
+                                                                                <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                                            </g>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>                                            
+                                                                </div>
+                                                <div class="fop-img-wrapper">
+                                                    <img src="images/final.jpg"  class="fop-img" alt=""> 
+                                                </div>
+                                                <div class="fop-description">
+                                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                                            
+                                                    </h4>
+                                                    <span class="fop-catch-weight"> 75ml</span>
+                                                    <a class="fop-row-promo promotion-offer" href="#"><span>Buy any 1 add 1 free</span></a>
+                                                </div>
+                                                <div class="review-wrapper">
+                                                    <span class="fop-rating">
+                                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+                    
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="price-group-wrapper">
+                                                    <span class="fop-price">
+                                                        ₼2.19
+                                                    </span>
+                                                   
+                                                </div>
+                                                   
+                                                
+                                                 <div class="button-section ">
+                                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                                        <span class="add-to-trolley">Add to trolley</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                            <div class="fop-content">
+                                                    <div class="redline"></div>
+                                                    <a href="" class="detail-page-link"></a>
+                                                    <div class="stickers">
+                                                        <span class="fop-mark-new fop-image-corner">new</span>
+                                                        <span class="fop-mark-offer fop-image-corner">компания</span>
+                                                    </div>
+                                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                        <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                                <rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect>
+                                                                <g class="fav-anim">
+                                                                    <g>
+                                                                        <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                        <g class="line-out">
+                                                                            
+                                                                        </g>
+                                                                        <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </button>                             
+                                                    </div>
+                                                <div class="fop-img-wrapper">
+                                                    <img src="images/vafli.jpg"  class="fop-img" alt=""> 
+                                                </div>
+                                                
+                                                <div class="fop-description">
+                                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                                    </h4>
+                                                    <span class="fop-catch-weight"> 75ml</span>
+                                                    <a class="fop-row-promo promotion-offer" href="#"><span>Buy any 1 add 1 free</span></a>
+                                                </div>
+                                                <div class="review-wrapper">
+                                                    <span class="fop-rating">
+                                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+                    
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="price-group-wrapper">
+                                                    <span class="fop-price">
+                                                        ₼2.19
+                                                    </span>
+                                                </div>
+                                                
+                                                 <div class="button-section ">
+                                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                                        <span class="add-to-trolley">Add to trolley</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                        <div class="fop-content fop-out-of-stock">
+                                            <div class="redline"></div>
+                                            <a href="" class="detail-page-link"></a>
+                                            <div class="stickers">
+                                                <span class="fop-mark-oos fop-image-corner">Out of Stock</span>
+                                            </div>
+                                            <div class="fop-quickMenu__buttonContainer" >
+                                                <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                        <rect class="hover-trigger" style="width:20px;height:20px;stroke-width:0;fill:transparent"></rect>
+                                                        <g class="fav-anim">
+                                                            <g>
+                                                                <path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path>
+                                                                <g class="line-out">
+                                                                    
+                                                                </g>
+                                                                <path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </button>                                                
+                                            </div>
+                                            <div class="fop-img-wrapper">
+                                                <img src="images/mak.jpg"  class="fop-img" alt=""> 
+                                            </div>
+                                            <div class="fop-description">
+                                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                    <span class="fop-catch-weight-inline"> 75ml</span>
+                                                </h4>
+                                                <span class="fop-catch-weight"> 75ml</span>
+                                            </div>
+                                            <div class="review-wrapper">
+                                                <!-- <span class="fop-rating">
+                                                    <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+                
+                                                    </span>
+                                                </span> -->
+                                            </div>
+                                            <div class="price-group-wrapper">
+                                                <span class="fop-price">
+                                                    ₼2.19
+                                                </span>
+                                            </div>    
+                                                <div class="button-section ">
+                                                <a class="fop-alternatives" href=""><span>See Alternatives</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+    </div>
+   
+</div>
+</div>
+
+
+  <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="socialMedia">
+                    <ul>
+                        <li>
+                            <a href="#" class="facebook" target="_blank">
+                                Ocado Facebook page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tabs-2" class="twitter" target="_blank">
+                                Ocado Twitter page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="gplus" target="_blank" rel="publisher">
+                                Google Plus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pinterest" target="_blank">
+                                Ocado Pinterest page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram" target="_blank">
+                                Ocado Instagram page
+                            </a>
+                        </li>                            
+                        <li>
+                            <a href="#" class="youtube" target="_blank">
+                                Ocado Youtube channel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="blog" target="_blank">
+                                Ocado blog
+                            </a>
+                        </li>
+                    </ul>
+                    <!--  <p>
+                        Download our Apps
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#" class="ios" target="_blank">
+                                Download our app for iPhone and iPad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="android" target="_blank">
+                                Download our app for Android
+                            </a>
+                        </li>
+                    </ul> -->
+                    <img src="images/footer.jpg" alt="" class="footer-image hidden-xs">
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col contact">
+                        <h4><a href="contact.html">Contact us</a></h4>
+                        <p><strong>Call Us</strong>  5:30am - midnight, 7 days a week, on 0345 656 1234</p>
+                        <p><strong>Email us</strong> at <a href="mailto:azom@azom.az">azom@azom.az</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a href="aboutus.html">About Us</a>  
+                     </div>
+                </div>
+    
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                    <div>
+                        © 2018 All rights reserved. Azom Retail Limited
+                    </div>
+               </div>
+            </div>
+        </div>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.raty.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

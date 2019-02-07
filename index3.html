@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Azom</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+      .navbar-default{
+        background-color: #40a8c4;
+      }
+     
+      .main-category>a{
+          color: #fff !important;
+      }
+    
+  </style>
+  <body>
+    <div id="top"><img src="images/arrow.png" alt=""></div> 
+    <div class="fix">
+        <header class="header">
+                
+         <div class="container" style="position: relaive;">
+             
+             <div class="row">
+                 <div class="col-lg-8 col-md-7 col-sm-7 hidden-xs">
+                     <ul class="nav nav-tabs top-menu">
+                         <li ><a href="index.html">Ocado home</a></li>
+                         <li class="active"><a href="goods.html">RECIPES</a></li>
+                         <li><a href="#menu2">Summer food</a></li>
+                         <li><a href="#menu3">Share</a></li>
+                     </ul>
+                 </div>
+                 <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs">
+                    <div class="auth-buttons header-tile">
+                        <div id="login" class="pii">
+                            <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                        </div>
+                        <div id="register">
+                            <a href="#" class="button button-register" id="quickReg">Register</a>
+                            <a href="/delivery/<?php echo $lang_url;?>" class="notification"> <img src="<?= SITE_TEMPLATE_PATH; ?>/images/green-van.svg" alt="" style="    width: 32px;"></a>
+
+                        </div>
+                    </div>
+            
+                 </div>
+                
+             </div>
+         </div>
+     </header>   
+     <div class="main-header">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mobile-bg">
+                
+                    <div id="brandLogo">
+                        <a title="Home" name="home" href="#">
+                            <img class="hidden-lg hidden-md hidden-sm visible-xs" src="images/azom-mob.svg" alt="Ocado - Home">
+                            <img  class="hidden-xs" src="images/logo.svg" alt="Ocado - Home">
+                        </a>
+                    </div>
+                    <form action="" class="suggestionsForm">
+                        <fieldset>
+                            <input id="findText" class="navSearchTxt searchModeActive" name="entry" type="text" maxlength="50" autocomplete="off" autocapitalize="off" autocorrect="off" title="Find a product" placeholder="Find a product" value="">
+                            <input type="submit" id="findButton" class="navSearchBtn" value="" title="Search">
+                        </fieldset>
+                    </form>
+                    <!-- Split button -->
+              
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+                    <div id="basketSummary" class="basketSummary">
+                        <a href="" class="notification"> <img src="images/green-van.svg" alt="" style="    width: 32px;"></a>
+                        <a href="" class="notification" > <img src="images/libra.svg" alt="" class="sub-nav-item"></a>
+                        <a href="" class="notification"><img src="images/heart.svg" alt=""  class="sub-nav-item"><span class="basket-number" >99+</span></a>
+                        <a href="" class="notification"> <img src="images/basket.svg" alt=""  class="sub-nav-item"><span class="basket-number" >0</span></a>
+                    </div>
+                    <div class="btn-group lang">
+                        <div class="dropdown hello">
+                                <button class="dropbtn">ru<b class="caret"></b></button>
+                                <div class="dropdown-content">
+                                    <a href="#">En</a>
+                                    <a href="#">az</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="mobile-menu-xs hidden-lg hidden-md hidden-sm ">
+                            <nav class=" navbar-default">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                    <div id="slide-navbar-collapse" class="navbar-collapse collapse mobile-collapse" aria-expanded="false" style="height: 1px;">
+                                        <div class="auth-buttons header-tile">
+                                            <div id="login" class="pii">
+                                                <a href="#r" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                            </div>
+                                            <div id="register">
+                                                <a href="#" class="button button-register" id="quickReg">Register</a>
+                                            </div>
+                                        </div>
+                                        <ul class="nav navbar-nav">
+                                        <li><a href="catalog.html">Top pics</a></li>
+                                        <li><a href="catalog.html">Offers</a></li>
+                                        <li><a href="catalog.html">Favorites</a></li>
+                                        <li><a href="catalog.html">Default</a></li>
+                                        <li><a href="catalog.html">Static top</a></li>
+                                        <li><a href="catalog.html">Fixed top</a></li>
+                                    </ul>
+                                </div><!--/.nav-collapse -->
+                            </nav>
+                            <div class="menu-overlay"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="navbar navbar-default navbar-fixed-top main-menu  hidden-xs" role="navigation">
+                <div class="container">
+                    <div class="row">
+                    <div class="collapse navbar-collapse ">
+                        <ul class="nav navbar-nav">
+                        
+                         <!-- MENU SHEXSI GIGIENA BAWLAYIR  -->
+                            <li class="dropdown main-category"> 
+                                <a href="wexsigigiyena.html" class="dropdown-toggle">Продукты питания</br> холодого хранения <b class="caret"></b></a>
+                                 <ul class="dropdown-menu">
+                                     <li class="dropdown-submenu tut">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Замороженные продукты</a>
+                                        <ul class="dropdown-menu dropdown-menu1">
+                                            <li><a href="#">Мороженое</a></li>
+                                            <li><a href="#">Полуфабрикаты</a></li>
+                                            <li><a href="#">Морепродукты</a></li>
+                                            <li><a href="">Мясные продукты разные</a></li>
+                                        </ul>
+                                     </li>
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Мясные продукты\<br
+                                            >Гастрономия</a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Колбасы\Сосиски </a></li>
+                                             <li><a href="#">Мясные и копченые изделия\Нарезки</a></li>
+                                             <li><a href="#">Мясо</a></li>
+                                         </ul>
+                                     </li>
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Молочные продукты</a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Сливочное масло\Спред\Маргарин</a></li>
+                                             <li><a href="#">Сыры\Творожные изделия</a></li>
+                                             <li><a href="#">Молоко\Молочные продукты </a></li>
+                                         </ul>
+                                         
+                                     </li>
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Продукты из птицы</a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Курица неразделанная</a></li>
+                                             <li><a href="#">Курица разделанная</a></li>
+                                             <li><a href="#">Фарш куриный\индейки</a></li>
+                                             <li><a href="#">Яйца</a></li>
+                                         </ul>
+                                        
+                                     </li>
+                                 </ul>
+                                 <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                </ul>
+                             </li>
+         <!-- MENU SHEXSI GIGIYENA BASHLAYIR -->
+         <li class="dropdown main-category"> 
+                <a href="main.html" class="dropdown-toggle">Продукты питания </br> регулярного хранения<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu tut">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Бакалея</a>
+                        <ul class="dropdown-menu dropdown-menu1">
+                            <li><a href="#">Мука\Рис\Гречка\Крупы</a></li>
+                            <li><a href="#">Растительные масла</a></li>
+                            <li><a href="#">Макаронные изделия</a></li>
+                            <li><a href="#">Каши для завтрака</a></li>
+                            <li><a href="#">Бобовые\Зерновые</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li class="dropdown-submenu tut">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Консервы</a>
+                        <ul class="dropdown-menu dropdown-menu1">
+                            <li><a href="#">Варенья\Джемы\Мед</a></li>
+                            <li><a href="#">Консервы</a></li>
+                            <li><a href="#">Соленья </a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu tut">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Орехи\Сухофрукты\Специи</a>
+                        <ul class="dropdown-menu dropdown-menu1">
+                            <li><a href="#">Кондитерские\Пищевые добавки</a></li>
+                            <li><a href="#">Соль\Перец</a></li>
+                            <li><a href="#">Специи</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu dropdown-menu2">
+                    <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                </ul>
+            </li>
+         <!-- MENU USHAQLAR UCUN BASHLAYIR -->
+                         <li class="dropdown main-category"> 
+                             <a href="main.html" class="dropdown-toggle">Товары </br> для дома<b class="caret"></b></a>
+                             <ul class="dropdown-menu">
+                                 <li class="dropdown-submenu tut">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Моющие средства</a>
+                                     <ul class="dropdown-menu dropdown-menu1">
+                                         <li><a href="#">Пятновыводители\Отбеливатели\<br>Кондиционеры</a></li>
+                                         <li><a href="#">Стиральные порошки\Гели</a></li>
+                                     </ul>
+                                     
+                                 </li>
+                                 <li class="dropdown-submenu tut">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Чистящие средства и<br> прочие товары </a>
+                                     <ul class="dropdown-menu dropdown-menu1">
+                                         <li><a href="#">Средства по уходу за обувью </a></li>
+                                         <li><a href="#">Чистящие влажные салфетки</a></li>
+                                         <li><a href="#">Чистящие щетки\губки</a></li>
+                                         <li><a href="#">Перчатки</a></li>
+                                     </ul>
+                                    
+                                 </li>
+                                 <li class="dropdown-submenu tut">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Для дома\сада\дачи</a>
+                                     <ul class="dropdown-menu dropdown-menu1">
+                                         <li><a href="#">Средства для чистки мебели\ </br>деревянных и пр. поверхностей </a></li>
+                                         <li><a href="#">Средства для чистки пола и ковров </a></li>
+                                         <li><a href="#">Средства для чистки окон\зеркал</a></li>
+                                     </ul>
+                                    
+                                 </li>
+                                 <li class="dropdown-submenu tut">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ванная \Туалет</a>
+                                    <ul class="dropdown-menu dropdown-menu1">
+                                        <li><a href="#">Чистящие средства для ванной и туалета</a></li>
+                                        <li><a href="#">Средства для очистки труб\засоров</a></li>
+                                        <li><a href="#">Туалетная бумага</a></li>
+                                        <li><a href="#">Освежители воздуха</a></li>
+                                    </ul>
+                                       
+                                </li>
+                             </ul>
+                             <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                </ul>
+                         </li>
+
+                         <!-- QIDA QRUPU BAWLAYIR  -->
+                         <li  class="dropdown main-category"> 
+                             <a href="main.html" class="dropdown-toggle">Персональная </br> гигиена<b class="caret"></b></a>
+                             <ul class="dropdown-menu">
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gigiyena  </a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Bədənə Qulluq</a></li>
+                                             <li><a href="#">Saça Qulluq</a></li>
+                                             <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                         </ul>
+                                        
+                                     </li>
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bezlər  </a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Leylək</a></li>
+                                             <li><a href="#">Pampers</a></li>
+                                             <li><a href="#">Huggies</a></li>
+                                         </ul>
+                                     </li>
+                                     <li class="dropdown-submenu tut">
+                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salfetlər  </a>
+                                         <ul class="dropdown-menu dropdown-menu1">
+                                             <li><a href="#">Bədənə Qulluq</a></li>
+                                             <li><a href="#">Saça Qulluq</a></li>
+                                             <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                                 <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                </ul>
+                         </li>
+                         <!-- UWAQLAR QRUPU BAWLAYIR  -->
+                         <li  class="dropdown main-category"> 
+                                 <a href="main.html" class="dropdown-toggle">Товары </br> для детей<b class="caret"></b></a>
+                                 <ul class="dropdown-menu">
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gigiyena  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Bədənə Qulluq</a></li>
+                                                 <li><a href="#">Saça Qulluq</a></li>
+                                                 <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bezlər  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Leylək</a></li>
+                                                 <li><a href="#">Pampers</a></li>
+                                                 <li><a href="#">Huggies</a></li>
+                                                 <li><a href="#">Predo</a></li>
+                                                
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salfetlər  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Bədənə Qulluq</a></li>
+                                                 <li><a href="#">Saça Qulluq</a></li>
+                                                 <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                     </ul>
+                             </li>
+                              <!-- Procie QRUPU BAWLAYIR  -->
+                         <li  class="dropdown main-category"> 
+                                 <a href="main.html" class="dropdown-toggle">Прочие </br> товары<b class="caret"></b></a>
+                                 <ul class="dropdown-menu">
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gigiyena  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Bədənə Qulluq</a></li>
+                                                 <li><a href="#">Saça Qulluq</a></li>
+                                                 <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bezlər  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Leylək</a></li>
+                                                 <li><a href="#">Pampers</a></li>
+                                                 <li><a href="#">Huggies</a></li>
+                                                 <li><a href="#">Predo</a></li>
+                                                 <li><a href="#">Canbebe</a></li>
+                                               
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                         <li class="dropdown-submenu tut">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salfetlər  </a>
+                                             <ul class="dropdown-menu dropdown-menu1">
+                                                 <li><a href="#">Bədənə Qulluq</a></li>
+                                                 <li><a href="#">Saça Qulluq</a></li>
+                                                 <li><a href="#">Burun Və Qulaq Çöpləri</a></li>
+                                             </ul>
+                                             <ul class="dropdown-menu dropdown-menu2">
+                                                 <li><a href="#"><img src="images/wed.jpg" alt=""></a></li>
+                                             </ul>
+                                         </li>
+                                     </ul>
+                             </li>
+                         <li class="main-category"><a href="offers.html" style="padding-top: 10px;">Новинка</a></li>
+                         <li class="main-category"><a href="favorites.html" style="padding-top: 10px;">Скидки</a></li>
+                         <li class="main-category"><a href="favorites.html" style="padding-top: 10px;">Кампании</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                 </div>
+             </div>
+         </div>
+     </div>
+
+<section id="contentWrapper" >
+        <div class="container">
+            <div class="row">
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <div class="welcome-banner">
+                        <p>
+                            Welcome to Azom, <br>
+                            the online market 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12 hidden-xs">
+                    
+                <div id="featured" >
+                    <ul class="ui-tabs-nav">
+                        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1">fance fan</a></li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"  rel="http://ui.jquery.com">fance fan</a></li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-5"><a href="#fragment-5">fance fan</a></li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-6"><a href="#fragment-6">fance </a></li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-7"><a href="#fragment-7">fance fan</a></li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <!-- First Content -->
+                        <div id="fragment-1" class="ui-tabs-panel" style="background-image: url(http://demo.webdeveloperplus.com/featured-content-slider/images/image1.jpg)">
+                          
+                            
+                        </div>
+                        <!-- Fourth Content -->
+                        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+                            <img src="http://demo.webdeveloperplus.com/featured-content-slider/images/image4.jpg" alt="" />
+                        </div>
+                        <div id="fragment-5" class="ui-tabs-panel ui-tabs-hide" style="">
+                            <img src="http://demo.webdeveloperplus.com/featured-content-slider/images/image4.jpg" alt="" />
+                        </div>
+                        <div id="fragment-6" class="ui-tabs-panel ui-tabs-hide" style="">
+                            <img src="http://demo.webdeveloperplus.com/featured-content-slider/images/image4.jpg" alt="" />
+                        </div>
+                        <div id="fragment-7" class="ui-tabs-panel ui-tabs-hide" style="">
+                            <img src="http://demo.webdeveloperplus.com/featured-content-slider/images/image4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="col-lg-3 col-md-3 hidden-sm  hidden-xs">
+                <div class="welcomeBox">
+                    <div class="inner">
+                        <h2>Добро пожаловать <br> в Азом</h2>
+                        <ul class="actionLinks">
+                            <li>
+                                <a href="#">
+                                    <strong>Start shopping</strong>
+                                </a>
+                            </li>
+                            <li class="singleLine">
+                                <a href="#">Offers</a>
+                            </li>
+                            <li class="edge">
+                                <a href="#" data-requireslogin="true">
+                                    Book a delivery
+                                </a>
+                            </li>
+                        </ul>
+                        
+                            <div class="discount">
+                                <a class="introOffer" href="" >
+                                    <span>
+                                            30% Скидка 
+                                    </span> <br>   
+                                    при первой покупке
+                                </a>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+<div class="journey_row journey-carousel">
+    <div class="journey-col-1">
+        <div class="journey-box journey-center">
+            <div class="fh-header_journey">
+                Groceries you’ll love, perfectly delivered.
+            </div>
+            <div id="lampada-image" class="hidden-xs"><img src="images/2568692.png" alt="illustration-1"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="fh-block__item fh-block__item--left">
+                <a href="#">
+                    <span>
+                        <div class="fh-block__content fh-block__content--center">
+                            <img class="fh-block__content-img" src="images/2552878.png" alt="gluten">
+                            <p class="middle-Text fh-block__content-paragraph"></p>
+                            
+                        </div>
+                    </span> 
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="fh-block__item fh-block__item--right">
+                <a href="#"> 
+                    <span>
+                        <div class="fh-block__content fh-block__content--center">
+                            <img class="fh-block__content-img" src="images/2552879.png" alt="dylesford"> 
+                            <p class="middle-Text fh-block__content-paragraph"></p>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- SLIDER  -->
+  <div class="slider">
+      <div class="container">
+          <div class="row">
+                <div class="fh-header_line">
+                    <h3>Top-rated Ocado own-label</h3>
+                </div>
+          </div>
+            <div class="row">
+                <div class="top-rated">
+                    <div> 
+                        <a href="#" class="carousel-link">
+                            <div class="shop-slider-list-name">
+                                <p>
+                                    Ocado Gold Sliced Pancetta
+                                </p>
+                            </div>
+                            <div class="shop-slider-list">
+                                    <img src="images/2552890.png" alt="">    
+                            </div>
+                            <div class="shop-slider-list-star">
+                                    <img src="images/2552891.svg" alt="rating">
+                            </div>
+                            <div class="shop-slider-list-description">
+                                “By far the tastiest and <strong>most <br>
+                                        delicate pancetta</strong>.”
+                            </div>
+                        </a>
+                    </div>
+
+                    <div> 
+                        <div class="shop-slider-list-name">
+                            <p>
+                                Ocado Gold Sliced Pancetta
+                            </p>
+                        </div> 
+                        <div class="shop-slider-list">
+                            <img src="images/2552892.png" alt="">    
+                        </div>
+                        <div class="shop-slider-list-star">
+                                <div class="rate" data-score="3.9" height="20" style="margin: 0 auto;"></div> 
+                        </div>
+                        <div class="shop-slider-list-description">
+                            “By far the tastiest and <strong>most <br>
+                                    delicate pancetta</strong>.”
+                        </div>
+                     </div>
+
+                    <div>
+                       
+                        <div class="shop-slider-list-name">
+                            <p>
+                                Ocado Gold Sliced Pancetta
+                            </p>
+                        </div>
+                        <div class="shop-slider-list">
+                            <img src="images/2552892.png" alt="">    
+                        </div>
+                        <div class="shop-slider-list-star">
+                                <img src="images/2552891.svg" alt="rating">
+                        </div>
+                        <div class="shop-slider-list-description">
+                            “By far the tastiest and <strong>most <br>
+                                    delicate pancetta</strong>.”
+                        </div>
+                    </div>
+
+                    <div> 
+                        <div class="shop-slider-list-name">
+                            <p>
+                                Ocado Gold Sliced Pancetta
+                            </p>
+                        </div>
+                        <div class="shop-slider-list">
+                            <img src="images/2825725.png " alt="">    
+                        </div>
+                        <div class="shop-slider-list-star">
+                                <img src="images/2552891.svg" alt="rating">
+                        </div>
+                        <div class="shop-slider-list-description">
+                            “By far the tastiest and <strong>most <br>
+                                    delicate pancetta</strong>.”
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="shop-slider-list-name">
+                            <p>
+                                Ocado Gold Sliced Pancetta
+                            </p>
+                        </div>
+                        <div class="shop-slider-list">
+                            <img src="images/2825725.png " alt="">    
+                        </div>
+                        <div class="shop-slider-list-star">
+                                <img src="images/2552891.svg" alt="rating">
+                        </div>
+                        <div class="shop-slider-list-description">
+                            “By far the tastiest and <strong>most <br>
+                                    delicate pancetta</strong>.”
+                        </div>
+                    </div>
+
+                    <div> 
+                        <div class="shop-slider-list-name">
+                        <p>
+                            Ocado Gold Sliced Pancetta
+                        </p>
+                        </div>
+                        <div class="shop-slider-list">
+                            <img src="images/2825725.png " alt="">    
+                        </div>
+                        <div class="shop-slider-list-star">
+                                <img src="images/2552891.svg" alt="rating">
+                        </div>
+                        <div class="shop-slider-list-description">
+                            “By far the tastiest and <strong>most <br>
+                                    delicate pancetta</strong>.”
+                        </div>
+                    </div>
+                  </div>
+            </div>
+      </div>
+  </div>
+
+  <!-- BANNER  -->
+  <figcaption class="effect-honey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-7">
+                <div class="LPP_Caption">
+                    <div class="LPP_Caption--fh-header">
+                        GREAT VALUE
+                    </div>
+                    <div class="LPP_Caption--fh-header2">
+                        Low Price Promise
+                    </div>
+                    <div class="LPP_Caption--description">
+                        We’ll send you a voucher if your comparable shopping isn’t cheaper than at tesco.com.
+                    </div>
+                    <div class="LPP--button">
+                        <a href="https://www.ocado.com/content/low-price-promise-60463?source=LOHP&amp;ad=95126%7C1352399%7C21217%7C1356496" class="btn btn-1 btn-1b">Find out more</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-2 col-xs-5">
+                <div class="item1"><a href="#"><img src="images/2552987.png" alt="Kingsmill"></a></div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <div class="item2"><a href="#"><img src="images/2552988.png" alt="Heinz"></a></div>
+                <div class="item3  hidden-sm hidden-xs"><a href="#"><img src="images/2552989.png" alt="Corn"></a></div>
+            </div>
+            <div  class="col-md-3 hidden-sm hidden-xs"> 
+                <div class="item4"><a href="#"><img src="images/2552985.png" alt="Warburtons"></a></div>
+            </div>
+            <div  class="col-md-2  hidden-sm hidden-xs"> 
+                <div class="item5"><a href="#"><img src="images/2552986.png" alt="Fingers"></a></div>
+            </div>
+        </div>
+    </div>
+</figcaption>
+
+<!--  GET STARTED   -->
+  <section class="moblp_inner">
+    <div class="container">
+        <div class="row">
+            <div class="third_section fh-block">
+                <div class="second_fh-header">
+                    <h3>It’s easy to get started:</h3>
+                </div>
+                <div class="list_elements_second">
+                    <div class="list_elements_second_item">
+                        <div class="list_elements_second_item--number">
+                        1
+                        </div>
+                        <div class="list_elements_second_item--text">
+                            Reserve a 1-hour <br>delivery slot
+                            <div class="list_elements_second_item--text-2">
+                            Your first delivery is free!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_elements_second_item">
+                        <div class="list_elements_second_item--number">
+                        2
+                        </div>
+                        <div class="list_elements_second_item--text">
+                        Fill your trolley <br>in a flash
+                        <div class="list_elements_second_item--text-2">
+                        The minimum order is just £40.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="list_elements_second_item">
+                        <div class="list_elements_second_item--number">
+                        3
+                        </div>
+                        <div class="list_elements_second_item--text">
+                            Check out now, <br>edit later
+                            <div class="list_elements_second_item--text-2">
+                            Edit until the day before.
+                        </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="column-button">
+                    <a href="" data-requireslogin="true" class="btn-column btn-column-1 btn-column-1b"><em class="icon"></em>
+                        Reserve a free delivery
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- OTZIVI   -->
+<div class="acola acol4">
+    <div class="container">
+        <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                 <div class="third_section2">
+                    <div class="list_elements_second2_item--img">
+                        <img src="images/2553033.png" alt="head">
+                    </div>
+                    <div class="list_elements_second2_item--text">
+                        “Plenty of vegan options – I can get everything I need.”
+                        <div class="list_elements_second2_item--text-2">
+                            Liz, Northamptonshire
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="third_section2">
+                    <div class="list_elements_second2_item--img">
+                        <img src="images/2553034.png" alt="head">
+                    </div>
+                    <div class="list_elements_second2_item--text">
+                    “The super friendly drivers are a credit to your company.”
+                    <div class="list_elements_second2_item--text-2">
+                        Hannah, Gloucestershire
+                    </div>
+                    </div>
+                </div>
+             </div>
+        </div> 
+    </div>  
+</div>
+<!-- FOOTER   -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <a href="#" class="facebook" target="_blank">
+                            Ocado Facebook page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2" class="twitter" target="_blank">
+                            Ocado Twitter page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="gplus" target="_blank" rel="publisher">
+                            Google Plus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pinterest" target="_blank">
+                            Ocado Pinterest page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="instagram" target="_blank">
+                            Ocado Instagram page
+                        </a>
+                    </li>                            
+                    <li>
+                        <a href="#" class="youtube" target="_blank">
+                            Ocado Youtube channel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="blog" target="_blank">
+                            Ocado blog
+                        </a>
+                    </li>
+                </ul>
+                <!--  <p>
+                    Download our Apps
+                </p>
+                <ul>
+                    <li>
+                        <a href="#" class="ios" target="_blank">
+                            Download our app for iPhone and iPad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="android" target="_blank">
+                            Download our app for Android
+                        </a>
+                    </li>
+                </ul> -->
+                <img src="images/footer.jpg" alt="" class="footer-image hidden-xs">
+                <embed src="images/səbətaga_2.swf">
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col contact">
+                    <h4><a href="contact.html">Contact us</a></h4>
+                    <p><strong>Call Us</strong>  5:30am - midnight, 7 days a week, on 0345 656 1234</p>
+                    <p><strong>Email us</strong> at <a href="mailto:azom@azom.az">azom@azom.az</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div>
+                    <a href="aboutus.html">About Us</a>  
+                </div>
+                <div>
+                    <a href="faq.html">Sual-Cavab</a>  
+                </div>
+                <div>
+                    <a href="terms-and-condition.html">Qaydalar və şərtlər</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    © 2018 All rights reserved. Azom Retail Limited
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div>
+                        © 2018 All rights reserved. Azom Retail Limited
+                    </div>
+                </div>
+        </div>
+    </div>
+  </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/jquery.raty.min.js"></script>
+    <script src="js/glavnoe.js"></script>
+    <script>
+$('.rate').raty({
+        readOnly : true,
+        half  : true,
+        score: function() {
+                 return $(this).attr('data-score');
+                },
+                space : false
+         
+    });  
+    </script>
+    <script>
+            $(document).ready(function(){
+              $('.top-rated').bxSlider({
+                maxSlides: 4,
+                minSlides: 1 ,
+                slideWidth: 300,
+              });
+            });
+          </script>
+  </body>
+</html>

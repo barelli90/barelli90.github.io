@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Azom</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+   
+  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        <div class="fix">
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                         <div class="col-lg-8 col-md-7 col-sm-7 hidden-xs">
+                             <ul class="nav nav-tabs top-menu">
+                                 <li ><a href="main.html">Ocado home</a></li>
+                                 <li class="active"><a href="index.html">RECIPES</a></li>
+                                 <li><a href="#menu2">Summer food</a></li>
+                                 <li><a href="#menu3">Share</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs">
+                             <div id="orderOptions">
+                                     <div id="basketCheckoutLinkDisabled">
+                                             <span class="button continue disabled"><em class="icon"></em>Checkout</span>
+                                         </div>
+                                     <a href="#" class="viewTrolley button"><em class="icon"></em>View trolley</a>
+             
+                                 <div class="deliveryContainer">
+                                     <a href="" data-requireslogin="true" class="bookDelivery button standardBookDelivery"><em class="icon"></em>
+                                         Book a delivery 
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </header>   
+              <div class="main-header">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mobile-bg">
+                             <div id="brandLogo">
+                                 <a title="Home" name="home" href="index.html">
+                                     <img class="hidden-lg hidden-md hidden-sm visible-xs" src="images/azom-mob.svg" alt="Azom">
+                                 </a>
+                             </div>
+                             <form action="" class="suggestionsForm">
+                                 <fieldset>
+                                     <input id="findText" class="navSearchTxt searchModeActive" name="entry" type="text" maxlength="50" autocomplete="off" autocapitalize="off" autocorrect="off" title="Find a product" placeholder="Find a product" value="">
+                                     <input type="submit" id="findButton" class="navSearchBtn" value="" title="Search">
+                                 </fieldset>
+                             </form>
+                             <!-- Split button -->
+                             <div class="btn-group lang">
+                                 <button type="button" class="btn btn btn-default">RU</button>
+                                 <button type="button" class="btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <span class="caret"></span>
+                                     <span class="sr-only">Toggle Dropdown</span>
+                                 </button>
+                                 <ul class="dropdown-menu">
+                                     <li><a href="#">AZ</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                             <div class="auth-buttons header-tile">
+                                 <div id="login" class="pii">
+                                     <a href="login.html" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                 </div>
+                                 <div id="register">
+                                     <a href="register.html" class="button button-register" id="quickReg">Register</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-2 col-sm-1 col-xs-12">
+                             <div id="basketSummary" class="basketSummary">
+                                 <a class="basket-link" href="basket.html">
+                                     <span id="basketSummaryTotal">£0<span class="basketSummaryTotalFraction">.00</span></span>
+                                     <div class="basketDetails">
+                                         <span id="trolleyTotal">
+                                             <span id="basketSummaryCount" class="basketSummaryCount">0</span> 
+                                             <span class="basketSummaryCountLabel">items</span>
+                                         </span>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="mobile-menu-xs hidden-lg hidden-md hidden-sm ">
+                                 <nav class=" navbar-default">
+                                     <div class="navbar-header">
+                                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                         <span class="sr-only">Toggle navigation</span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                         <span class="icon-bar"></span>
+                                         </button>
+                                     </div>
+                                         <div id="navbar" class="navbar-collapse collapse mobile-collapse" aria-expanded="false" style="height: 1px;">
+                                             <div class="auth-buttons header-tile">
+                                                 <div id="login" class="pii">
+                                                     <a href="login.html" class="button secondary" id="loginButton" iiemg="1">Log in</a>
+                                                 </div>
+                                                 <div id="register">
+                                                     <a href="register.html" class="button button-register" id="quickReg">Register</a>
+                                                 </div>
+                                             </div>
+                                             <ul class="nav navbar-nav">
+                                             <li><a href="catalogmenu.html">Top pics</a></li>
+                                             <li><a href="catalogmenu.html">Offers</a></li>
+                                             <li><a href="catalogmenu.html">Favorites</a></li>
+                                             <li><a href="catalogmenu.html">Default</a></li>
+                                             <li><a href="catalogmenu.html">Static top</a></li>
+                                             <li><a href="catalogmenu.html">Fixed top</a></li>
+                                         </ul>
+                                     </div><!--/.nav-collapse -->
+                                 </nav>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                 <div class="navbar navbar-default navbar-fixed-top hidden-xs" role="navigation">
+                   <div class="container">
+                       <div class="row">
+                       <div class="navbar-header">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                           </button>
+                       </div>
+                       <div class="collapse navbar-collapse ">
+                           <ul class="nav navbar-nav">
+                                 <li>
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
+                                     <ul class="dropdown-menu">
+                                         <li><a href="#">Action</a></li>
+                                         <li><a href="#">Another action</a></li>
+                                         <li><a href="#">Something else here</a></li>
+                                         <li class="divider"></li>
+                                         <li><a href="#">Separated link</a></li>
+                                         <li class="divider"></li>
+                                         <li><a href="#">One more separated link</a></li>
+                                         <li class="dropdown-submenu">
+                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                             <ul class="dropdown-menu">
+                                                 <li><a href="#">Action</a></li>
+                                                 <li><a href="#">Another action</a></li>
+                                                 <li><a href="#">Something else here</a></li>
+                                                 <li class="divider"></li>
+                                                 <li><a href="#">Separated link</a></li>
+                                                 <li class="divider"></li>
+                                                 <li class="dropdown-submenu">
+                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                                     <ul class="dropdown-menu">
+                                                         <li class="dropdown-submenu">
+                                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                                             <ul class="dropdown-menu">
+                                                                 <li><a href="#">Action</a></li>
+                                                                 <li><a href="#">Another action</a></li>
+                                                                 <li><a href="#">Something else here</a></li>
+                                                                 <li class="divider"></li>
+                                                                 <li><a href="#">Separated link</a></li>
+                                                                 <li class="divider"></li>
+                                                                 <li><a href="#">One more separated link</a></li>
+                                                             </ul>
+                                                         </li>
+                                                     </ul>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                     </ul>
+                                 </li>
+                               <li>
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">New <b class="caret"></b></a>
+                                   <ul class="dropdown-menu multi-level">
+                                       <li><a href="#">Action</a></li>
+                                       <li><a href="#">Another action</a></li>
+                                       <li><a href="#">Something else here</a></li>
+                                       <li class="divider"></li>
+                                       <li><a href="#">Separated link</a></li>
+                                       <li class="divider"></li>
+                                       <li><a href="#">One more separated link</a></li>
+                                       <li class="dropdown-submenu">
+                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                           <ul class="dropdown-menu">
+                                               <li><a href="#">Action</a></li>
+                                               <li class="dropdown-submenu">
+                                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                                   <ul class="dropdown-menu">
+                                                       <li class="dropdown-submenu">
+                                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                                           <ul class="dropdown-menu">
+                                                               <li><a href="#">Action</a></li>
+                                                               <li><a href="#">Another action</a></li>
+                                                               <li><a href="#">Something else here</a></li>
+                                                               <li class="divider"></li>
+                                                               <li><a href="#">Separated link</a></li>
+                                                               <li class="divider"></li>
+                                                               <li><a href="#">One more separated link</a></li>
+                                                           </ul>
+                                                       </li>
+                                                   </ul>
+                                               </li>
+                                           </ul>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li><a href="favorites.html">Favorites</a></li>
+                               <li><a href="new.html">New</a></li>
+                               <li><a href="offers.html">Offers</a></li>
+                               <li><a href=contact.html>Contact us</a></li>
+                           </ul>
+                       </div><!--/.nav-collapse -->
+                       </div>
+                   </div>
+               </div>
+             </div>
+               
+<div class="journey_row journey-carousel">
+    <div class="journey-col-1">
+        <div class="journey-box journey-center">
+            <div class="fh-header_journey">
+                Groceries you’ll love, perfectly delivered.
+            </div>
+            <div id="lampada-image"><img src="images/2568692.png" alt="illustration-1"></div>
+        </div>
+    </div>
+</div>
+  <section class="main-column">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-3">
+                <div class="sidebar-element filter-list js-filters">
+                    <div class="sidebar-item filter-actions">
+                        <span class="filter-by show-for-xlarge">
+                            Filter by
+                        </span>
+                        <a href="#" class="clear-link sidebar-link disabled">
+                            Clear all
+                        </a>
+                    </div>
+                    <button class="accordion active-ac" >Brands</button>
+                    <div class="panel">
+                        <label class="check-label">
+                            <input type="checkbox" value="x" aria-label="...">
+                            <span>Fry's</span>    
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox"  value="xx" aria-label="...">
+                            <span>Fry's</span>    
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox"  value="xxx" aria-label="...">
+                            <span>Fry's</span>    
+                        </label>
+                    </div>
+                    <button class="accordion active-ac">Options</button>
+                    <div class="panel">
+                        <label>
+                            <input type="checkbox"  value="option1" aria-label="...">
+                            <span>Fry's</span>    
+                        </label>
+                    </div>
+                    <button class="accordion active-ac">Dietary</button>
+                    <div class="panel">
+                        <label>
+                            <input type="checkbox"  value="option1" aria-label="...">
+                            <span>Fry's</span>    
+                        </label>
+                    </div>
+                </div>
+            <!-- RECOMMENDED YOU -->
+                <div class="sidebar-element you-might-like recommended">
+                    <div class="sidebar-header">Recommended to you</div>
+                    <div class="fop-content">
+                        <div class="fopView">
+                            <div class="fop-img-wrapper">
+                                <img alt="Schweppes Lemonade" aria-hidden="true" class="fop-img" src="images/si3.jpg">
+                            </div>
+                        </div>
+                        <div class="fop-description">
+                            <p class="fop-title">
+                                Schweppes Lemonade
+                                <span class="fop-catch-weight-inline"> 2L</span>
+                            </p>
+                            <div class="price-group-wrapper">
+                                <h5 class="fop-price fop-lpp">
+                                    £3.20
+                                </h5>        
+                            </div>
+                            <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                <span class="add-to-trolley">Add to trolley</span>
+                            </button>    
+                        </div>
+                    </div>
+                    <div class="fop-content">
+                        <div class="fopView">
+                            <div class="fop-img-wrapper">
+                                <img alt="Schweppes Lemonade" aria-hidden="true" class="fop-img" src="images/s5.jpg">
+                            </div>
+                        </div>
+                        <div class="fop-description">
+                            <p class="fop-title">
+                                Schweppes Lemonade
+                                <span class="fop-catch-weight-inline"> 2L</span>
+                            </p>
+                            <div class="price-group-wrapper">
+                                <h5 class="fop-price fop-lpp">
+                                    £3.20
+                                </h5>        
+                            </div>
+                            <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                <span class="add-to-trolley">Add to trolley</span>
+                            </button>    
+                        </div>
+                    </div>
+                </div>             
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-9">
+                <div class="row">
+                        <div class="menu-slider">
+                            <div class="menu-slider-item">I am6uy67yu6uide.</div>
+                            <div class="menu-slider-item">ya slider</div>
+                            <div class="menu-slider-item">privetde.</div>
+                            <div class="menu-slider-item">I am another 12</div>
+                            <div class="menu-slider-item">privetther 22.</div>
+                            <div class="menu-slider-item">I am another slide.</div>
+                        </div>
+                        <div class="popular">
+                                <div class="item">
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                    <span class="menu-slider-item">ya slider</span>
+                                </div>
+                                
+                               
+                                <div class="clear"></div>
+                              </div>
+                            
+                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="bc-desktop">
+                            <span class="bc-desktopBreadcrumbs__label">You are in: </span>
+                            <ul class="bc-desktopBreadcrumbs">
+                                <li class="bc-desktopBreadcrumbs__breadcrumb">
+                                   Shop >
+                                </li>
+                                <li class="bc-desktopBreadcrumbs__breadcrumb">
+                                        <span class="bc-desktopBreadcrumbs__text">Christmas at Yours</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                        <div class="fop-content">
+                                <div class="redline"></div>
+                                <div class="stickers">
+                                        <span class="fop-mark-new fop-image-corner">news</span>
+                                </div>
+                                <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                    <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                </div>
+                                <a href="" class="detail-page-link"></a>
+                               
+                            <div class="fop-img-wrapper">
+                                <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                            </div>
+                            <div class="fop-description">
+                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                        <span class="fop-catch-weight-inline"> 75ml</span>
+                                </h4>
+                                <span class="fop-catch-weight"> 75ml</span>
+                            </div>
+                            <div class="review-wrapper">
+                                <span class="fop-rating">
+                                    <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="price-group-wrapper">
+                                <span class="fop-price">
+                                    £2.19
+                                </span>
+                            </div>
+                                <span class="fop-unit-price">£2.92 per 100ml</span>       
+                            
+                             <div class="button-section ">
+                                <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                    <span class="add-to-trolley">Add to trolley</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="privet">
+                            <div class="fop-content">
+                                <div class="redline"></div>
+                                <div class="stickers">
+                                        <span class="fop-mark-new fop-image-corner">new</span>
+                                </div>
+                                <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                    <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                </div>
+                                <a href="" class="detail-page-link"></a>
+                               
+                            <div class="fop-img-wrapper">
+                                <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                            </div>
+                            <div class="fop-description">
+                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                        <span class="fop-catch-weight-inline"> 75ml</span>
+                                </h4>
+                                <span class="fop-catch-weight"> 75ml</span>
+                            </div>
+                            <div class="review-wrapper">
+                                <span class="fop-rating">
+                                    <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="price-group-wrapper">
+                                <span class="fop-price">
+                                    £2.19
+                                </span>
+                            </div>
+                                <span class="fop-unit-price">£2.92 per 100ml</span>       
+                            
+                             <div class="button-section ">
+                                <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                    <span class="add-to-trolley">Add to trolley</span>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                        <div class="fop-content ">
+                                <div class="redline"></div>
+                                <div class="stickers">
+                                    <span class="fop-mark-new fop-image-corner">new</span>
+                                    <span class="fop-mark-offer fop-image-corner">акция</span>
+                                </div>
+                                <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                    <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                </div>
+                            <div class="fop-img-wrapper">
+                                <img src="images/si3.jpg" class="fop-img" alt=""> 
+                            </div>
+                            <div class="fop-description">
+                                <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                    Colgate Max Fresh with Cooling Crystals Toothpaste
+                                        <span class="fop-catch-weight-inline"> 75ml</span>
+                                </h4>
+                                <span class="fop-catch-weight"> 75ml</span>
+                            </div>
+                            <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                            <div class="price-group-wrapper">
+                                    <span class="fop-price price-offer">
+                                        £2.19
+                                    </span>
+                                    <span class="fop-old-price">£9.99</span>
+                                </div>
+                                <span class="fop-unit-price">£2.92 per 100ml</span>       
+                               
+                                <div class="button-section ">
+                                <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <a href="" class="detail-page-link"></a>
+                                    <div class="stickers">
+                                            <span class="fop-mark-offer fop-image-corner">акция</span>
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                            <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                        </div>
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                </div>
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                        <span class="fop-price price-offer">
+                                                £29.19
+                                        </span>
+                                        <span class="fop-old-price">£99.99</span>
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <a href="" class="detail-page-link"></a>
+                                    <div class="stickers">
+                                            <span class="fop-mark-offer fop-image-corner">компания</span>
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                            <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                        </div>
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                </div>
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                            
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                    <a class="fop-row-promo promotion-offer" href="#"><span>Buy any 1 add 1 free</span></a>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                    <span class="fop-price">
+                                        £2.19
+                                    </span>
+                                   
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <a href="" class="detail-page-link"></a>
+                                    <div class="stickers">
+                                        <span class="fop-mark-new fop-image-corner">new</span>
+                                        <span class="fop-mark-offer fop-image-corner">компания</span>
+                                    </div>
+
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                            <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                        </div>
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                </div>
+                                
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                    <a class="fop-row-promo promotion-offer" href="#"><span>Buy any 1 add 1 free</span></a>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                    <span class="fop-price">
+                                        £2.19
+                                    </span>
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <div class="stickers">
+                                        <span class="fop-mark-new fop-image-corner">new</span>
+                                       
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                            <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                        </div>
+                                    <a href="" class="detail-page-link"></a>
+                                   
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                </div>
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                    <span class="fop-price">
+                                        £2.19
+                                    </span>
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="privet">
+                                <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <div class="stickers">
+                                            <span class="fop-mark-new fop-image-corner">new</span>
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                        <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                    </div>
+                                    <a href="" class="detail-page-link"></a>
+                                   
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                </div>
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                    <span class="fop-price">
+                                        £2.19
+                                    </span>
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content">
+                                    <div class="redline"></div>
+                                    <div class="stickers">
+                                            <span class="fop-mark-new fop-image-corner">new</span>
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                        <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                    </div>
+                                    <a href="" class="detail-page-link"></a>
+                                   
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                    <div class="fop-pack-info">
+                                    
+                                            <span class="fop-life" title="Shelf life: 3 days +">LIFE <!-- -->3<!-- -->d<!-- -->+</span>
+                                        
+                                        </div> 
+                                </div>
+                                 
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                           ljhnkh <br>
+                                           ljhnkh
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                </div>
+                                <div class="review-wrapper">
+                                    <span class="fop-rating">
+                                        <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+    
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="price-group-wrapper">
+                                    <span class="fop-price">
+                                        £2.19
+                                    </span>
+                                </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                
+                                 <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                        <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                            <div class="fop-content ">
+                                    <div class="redline"></div>
+                                    <div class="stickers">
+                                        <span class="fop-mark-new fop-image-corner">new</span>
+                                        <span class="fop-mark-offer fop-image-corner">акция</span>
+                                    </div>
+                                    <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                        <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                    </div>
+                                <div class="fop-img-wrapper">
+                                    <img src="images/si3.jpg" class="fop-img" alt=""> 
+                                </div>
+                                <div class="fop-description">
+                                    <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                        Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                    </h4>
+                                    <span class="fop-catch-weight"> 75ml</span>
+                                </div>
+                                <div class="review-wrapper">
+                                        <span class="fop-rating">
+                                            <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+        
+                                            </span>
+                                        </span>
+                                    </div>
+                                <div class="price-group-wrapper">
+                                        <span class="fop-price price-offer">
+                                            £2.19
+                                        </span>
+                                        <span class="fop-old-price">£9.99</span>
+                                    </div>
+                                    <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                   
+                                    <div class="button-section ">
+                                    <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                            <span class="add-to-trolley">Add to trolley</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                <div class="fop-content">
+                                        <div class="redline"></div>
+                                        <a href="" class="detail-page-link"></a>
+                                        <div class="stickers">
+                                                <span class="fop-mark-offer fop-image-corner">акция</span>
+                                        </div>
+                                        <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                            </div>
+                                    <div class="fop-img-wrapper">
+                                        <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                    </div>
+                                    <div class="fop-description">
+                                        <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                            Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                <span class="fop-catch-weight-inline"> 75ml</span>
+                                        </h4>
+                                        <span class="fop-catch-weight"> 75ml</span>
+                                    </div>
+                                    <div class="review-wrapper">
+                                        <span class="fop-rating">
+                                            <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+        
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="price-group-wrapper">
+                                            <span class="fop-price price-offer">
+                                                    £29.19
+                                            </span>
+                                            <span class="fop-old-price">£99.99</span>
+                                    </div>
+                                        <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                    
+                                     <div class="button-section ">
+                                        <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                            <span class="add-to-trolley">Add to trolley</span>
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                <div class="fop-content fop-out-of-stock">
+                                        <div class="redline"></div>
+                                        <a href="" class="detail-page-link"></a>
+                                        <div class="stickers">
+                                           
+                                            <span class="fop-mark-oos fop-image-corner">Out of Stock</span>
+                                        </div>
+                                        <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                            </div>
+                                    <div class="fop-img-wrapper">
+                                        <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                    </div>
+                                    <div class="fop-description">
+                                        <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                            Colgate Max Fresh with Cooling Crystals Toothpaste
+                                            <span class="fop-catch-weight-inline"> 75ml</span>
+                                        </h4>
+                                        <span class="fop-catch-weight"> 75ml</span>
+                                    </div>
+                                    <div class="review-wrapper">
+                                        <!-- <span class="fop-rating">
+                                            <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+        
+                                            </span>
+                                        </span> -->
+                                    </div>
+                                    <div class="price-group-wrapper">
+                                        <span class="fop-price">
+                                            £2.19
+                                        </span>
+                                    </div>
+                                        <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                    
+                                     <div class="button-section ">
+                                            <a class="fop-alternatives" href=""><span>See Alternatives</span></a>
+                                        <!-- <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                            <span class="add-to-trolley">Add to trolley</span>
+                                        </button> -->
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                <div class="fop-content">
+                                        <div class="redline"></div>
+                                        <a href="" class="detail-page-link"></a>
+                                        <div class="stickers">
+                                            <span class="fop-mark-new fop-image-corner">new</span>
+                                            <span class="fop-mark-offer fop-image-corner">компания</span>
+                                        </div>
+    
+                                        <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                            </div>
+                                    <div class="fop-img-wrapper">
+                                        <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                    </div>
+                                    
+                                    <div class="fop-description">
+                                        <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                            Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                <span class="fop-catch-weight-inline"> 75ml</span>
+                                        </h4>
+                                        <span class="fop-catch-weight"> 75ml</span>
+                                        <a class="fop-row-promo promotion-offer" href="#"><span>Buy any 1 add 1 free</span></a>
+                                    </div>
+                                    <div class="review-wrapper">
+                                        <span class="fop-rating">
+                                            <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+        
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="price-group-wrapper">
+                                        <span class="fop-price">
+                                            £2.19
+                                        </span>
+                                    </div>
+                                        <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                    
+                                     <div class="button-section ">
+                                        <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                            <span class="add-to-trolley">Add to trolley</span>
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 fops">
+                                <div class="fop-content">
+                                        <div class="redline"></div>
+                                        <div class="stickers">
+                                            <span class="fop-mark-new fop-image-corner">new</span>
+                                           
+                                        </div>
+                                        <div class="fop-quickMenu__buttonContainer" style="float: right">
+                                                <button class="fop-quickMenu__button" aria-label="Advanced settings for Ocado British 3-5 Chicken Breast Fillets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect class="hover-trigger" style="width:33px;height:32px;stroke-width:0;fill:transparent"></rect><g class="fav-anim"><g><path class="outline" d="M27.5,0.6c-1-0.4-2.1-0.6-3.2-0.6h0C23.2,0,22,0.2,21,0.7C20,0.2,18.8,0,17.7,0c-1.1,0-2.1,0.2-3.1,0.6C11.2,2,9,5.2,9,8.8c0,0.5,0,1,0.1,1.5l0,0l0,0c0.2,0.9,0.5,1.8,0.9,2.7H0v17h23v-7.2l0.2-0.2l1.1-1.2c0.3-0.3,3.3-3.3,5.7-5.7c1.5-1.4,2.5-3.3,2.9-5.4l0,0l0,0C33,9.8,33,9.3,33,8.8C33,5.2,30.8,2,27.5,0.6z"></path></g><g><path class="heart-line" d="M27.6,4.7C25.4,3.3,22.7,4.2,21,6c-1.7-1.8-4.4-2.7-6.6-1.3C13,5.6,12,7,12,9.4c0,0.3,0,0.7,0.1,1  c0.2,1.3,0.9,2.6,2,3.8c2.2,2.2,6.9,7,6.9,7s4.7-4.8,6.9-7c1.1-1.1,1.8-2.4,2-3.8c0-0.3,0.1-0.7,0.1-1C30,7,29,5.6,27.6,4.7z"></path><polygon class="lines" points="14 18 11 15 7 15 7 18 14 18"></polygon><polygon class="lines" points="19 23 16 20 7 20 7 23 19 23"></polygon><rect class="lines" x="2" y="15" width="3" height="3"></rect><rect class="lines" x="2" y="20" width="3" height="3"></rect></g><g class="line-out"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><g class="line-in"><rect class="lines" x="7" y="25" width="14" height="3"></rect><rect class="lines" x="2" y="25" width="3" height="3"></rect></g><path class="heart" d="M25.2,7c0.3,0,0.5,0.1,0.7,0.2c0.5,0.3,1,0.8,1,2.2c0,0.2,0,0.4,0,0.6c-0.1,0.7-0.5,1.4-1.2,2.1  c-1.2,1.2-3.3,3.3-4.8,4.8c-1.5-1.6-3.6-3.6-4.8-4.8c-0.7-0.7-1.1-1.4-1.2-2.1c0-0.2,0-0.4,0-0.5c0-1.4,0.5-1.9,1-2.2  C16.3,7.1,16.5,7,16.8,7c0.7,0,1.5,0.4,2.1,1l2.2,2.2L23.2,8C23.8,7.4,24.6,7,25.2,7"></path></g></svg></button>
+                                            </div>
+                                        <a href="" class="detail-page-link"></a>
+                                       
+                                    <div class="fop-img-wrapper">
+                                        <img src="images/si3.jpg"  class="fop-img" alt=""> 
+                                    </div>
+                                    <div class="fop-description">
+                                        <h4 class="fop-title" title="Colgate Max Fresh with Cooling Crystals Toothpaste">
+                                            Colgate Max Fresh with Cooling Crystals Toothpaste
+                                                <span class="fop-catch-weight-inline"> 75ml</span>
+                                        </h4>
+                                        <span class="fop-catch-weight"> 75ml</span>
+                                    </div>
+                                    <div class="review-wrapper">
+                                        <span class="fop-rating">
+                                            <span class="fop-rating-inner" title="Reviews 5.00 out of 5" style="width: 100%;">
+        
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="price-group-wrapper">
+                                        <span class="fop-price">
+                                            £2.19
+                                        </span>
+                                    </div>
+                                        <span class="fop-unit-price">£2.92 per 100ml</span>       
+                                    
+                                     <div class="button-section ">
+                                        <button type="submit" class="fop-btn-add fop-btn-add-single js-fop-btn-add-single " name="addproduct" title="Add one item">
+                                            <span class="add-to-trolley">Add to trolley</span>
+                                           
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.menu-slider').bxSlider({
+            mode: 'fade',
+           
+            controls: true,
+            responsive: true,
+            pager: false,
+            minSlides: 5,
+        maxSlides: 5,
+        moveSlides: 5,
+        slideWidth: 120,
+        slideSelector: 'div.menu-slider-item',
+        
+          });
+
+ $( ".add-to-trolley" ).on( "click",  function() {
+        var cena = $(this).parents(".button-section").siblings(".price-group-wrapper").find(".fop-price").text();
+        alert(cena);
+    });
+    
+        });
+        $(function() {
+  $('.popular').bxSlider({
+    
+  
+    autoControls: true,
+    speed: 500,
+    slideSelector: 'div.item',
+    
+    slideWidth: 200
+  });
+});
+$(".fops").mouseenter( function (e) {
+    var fopsWidth =$(this).innerWidth();
+    $(this).find(".privet").width(fopsWidth);
+    var $this = $(this);
+    //var summa = $(window).width() -$this.offset().left
+   
+    var summa = $(window).width() - ($this.offset().left + $(this).innerWidth() )> $(this).innerWidth();
+    if(summa){
+        $(this).find(".privet").css({visibility: 'visible'}).animate({"left":fopsWidth}, 80);
+    }else{
+        $(this).find(".privet").css({visibility: 'visible' }).animate({"left":-fopsWidth}, 80);
+    }
+      
+    }).on('mouseleave', function(){
+        $(this).find(".privet").css({visibility: 'hidden', left: 0, });
+       
+        
+    });
+    
+ 
+
+
+
+
+//  $("#containerOne").on('mousemove', function(e) {
+//         var mouseSide;
+//         if ((e.pageX - this.offsetLeft) < $(this).width() / 2) {
+//             UpdateStyle('left','block');
+//             UpdateStyle('right','none');
+//         } else {
+//             UpdateStyle('left','none');
+//             UpdateStyle('right','block');
+//         }
+//     }).on('mouseout', function(){
+//         UpdateStyle('left','none');
+//             UpdateStyle('right','none');
+//         });
+      </script>
+  </body>
+</html>

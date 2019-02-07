@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/main.css" rel="stylesheet" id="bootstrap-css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- MultiStep Form -->
+    <div class="container">
+
+    
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Personal Details</li>
+                <li>Social Profiles</li>
+                <li>Account Setup</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">Tell us something more about you</h3>
+                <div class="form-group">
+                    <label for="property-1"><span class="bx-authform-starrequired">*</span> Ф.И.О.</label>
+                    <input type="text" id="property-1" class="form-control" name="" placeholder="ФИО" required="required" >
+                </div>
+                <div class="form-group">
+                    <label for="property-2"><span class="bx-authform-starrequired">*</span> E-Mail</label>
+                    <input type="email" id="property-2" class="form-control" name="" placeholder="Эл. почта" required="required" >
+                </div>
+                <div class="form-group">
+                    <label for="property-3"><span class="bx-authform-starrequired">*</span> Телефон</label>
+                    <input type="text" id="property-3" class="form-control number bfh-phone" name="" placeholder="Телефон" data-format="ddd-ddd-dd-dd" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="property-4"><span class="bx-authform-starrequired">*</span>Адрес</label>
+                    <textarea icols="30" rows="3" id="property-4" autocomplete="address" required="required" placeholder="" class="form-control bx-ios-fix"></textarea>
+                </div>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <div class="bx-about-product">
+                    <div class="bx-soa-item-table">
+                        <div class="basket-info">
+                            <div class="item-block">
+                                <div class="item-img-block">
+                                    <a href="/catalog/telefony/samsung_s6_edge/">
+                                        <img src="images/mak.jpg" class="item-imgcontainer">
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <div class="bx-soa-item-title">
+                                        <a href="/catalog/telefony/samsung_s6_edge/">Samsung S6 edge</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item-properties">
+                                <div>
+                                    <div class="item-td-title visible-xs visible-sm">Количество</div>
+                                    <div class="item-td-text"><span>1&nbsp;шт</span></div>
+                                </div>
+                                <div>
+                                    <div class="item-td-title visible-xs visible-sm">Сумма</div>
+                                    <div class="item-td-text">
+                                        <strong class="bx-price all">11 AZN</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle">Fill in your credentials</h3>
+                <div class="graf-container">
+                    <input type="radio" class="cash" name="card" id="card">
+                    <label for="card">
+                        <div class="company-image" style="background-image: url(images/card.png);"></div>
+                    </label>
+                </div>
+                <div class="graf-container">
+                    <input type="radio" class="cash" name="card" checked="checked" id="cash">
+                    <label for="cash">
+                        <div class="company-image" style="background-image: url(images/cash.png);"></div>
+                    </label>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+        </form>
+        
+    </div>
+</div>
+</div>
+<!-- /.MultiStep Form -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
